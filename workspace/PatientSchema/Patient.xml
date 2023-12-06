@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rk:Patient xmlns:rk="http://www.rajkhare.com/Patient"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rajkhare.com/Patient Patient.xsd " id="123">
+	<rk:name>Raj</rk:name>
+	<rk:age>41</rk:age>
+	<rk:gender>M</rk:gender>
+	<rk:phone>8179746733</rk:phone>
+	<rk:paymentType>
+		<rk:insurance>
+			<rk:limit>500000</rk:limit>
+			<rk:provider>General India Health Insurance</rk:provider>
+		</rk:insurance>
+	</rk:paymentType>
+</rk:Patient>

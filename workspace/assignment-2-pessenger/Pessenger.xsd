@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.rajkhare.com/Pessenger"
+	xmlns:tns="http://www.rajkhare.com/Pessenger"
+	elementFormDefault="qualified">
+	
+	<element name="Pessenger" type="tns:Pessenger"/>
+	
+	<complexType name="Pessenger">
+	<sequence>
+		<element name="name" type="string" />
+		<element name="dob" type="date" />
+		<element name="seatno" type="int" />
+		<element name="gender" type="string" />
+	</sequence>
+	</complexType>
+	
+</schema>

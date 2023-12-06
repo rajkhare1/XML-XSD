@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- This xml document holds the license information -->
+<DriversLicense status="suspended">
+	<Number>12345</Number>
+	<FirstName>Raj</FirstName>
+	<LastName>Khare</LastName>
+	 <!-- DateOfBirth>02/oct/1982</DateOfBirth -->
+	<VehicleType>Car</VehicleType>
+	<DateOfIssue>11/june/2012</DateOfIssue>
+	<!-- For citizens it is 4 years and for visa holders it is the visa expiry date -->
+	<ExpiryDate>11/june/2015</ExpiryDate>
+	<Photo location="servername/filename" />
+	
+	<Address>
+		<street>stevens dr</street>
+		<city>king of purssia</city>
+		<state>PA</state>
+		<country>USA</country>
+		<zipcode>19406</zipcode>
+	</Address>
+</DriversLicense>

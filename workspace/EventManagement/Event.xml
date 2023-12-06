@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:event id="123456"
+	xmlns:tns="http://www.rajeventmanagement.com/Event"
+	xmlns:tns1="http://www.rajeventmanagement.com/Common"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rajeventmanagement.com/Event Event.xsd ">
+	<tns:name>tns:name</tns:name>
+	<tns:description>tns:description</tns:description>
+	<tns:ticketPrice>0.0</tns:ticketPrice>
+	<tns:startTime>2001-12-31T12:00:00</tns:startTime>
+	<tns:endTime>2001-12-31T12:00:00</tns:endTime>
+	<tns:organizer id="123456">
+		<tns:name>testName</tns:name>
+		<tns:email>test@test.com</tns:email>
+		<tns:phone>1234567890</tns:phone>
+	</tns:organizer>
+	<tns:venue id="123456">
+		<tns:name>RadhikaMandapam</tns:name>
+		<tns:street>Gwalior road</tns:street>
+		<tns:city>Jhansi</tns:city>
+		<tns:state>UP</tns:state>
+		<tns:country>India</tns:country>
+		<tns:zipcode>284001</tns:zipcode>
+	</tns:venue>
+	<tns:participant id="123456">
+		<tns:name>testName</tns:name>
+		<tns:email>test@test.com</tns:email>
+		<tns:phone>1234567890</tns:phone>
+	</tns:participant>
+	<tns:participant id="123456">
+		<tns:name>testName</tns:name>
+		<tns:email>test@test.com</tns:email>
+		<tns:phone>1234567890</tns:phone>
+	</tns:participant>
+	<tns:participant id="123456">
+		<tns:name>testName</tns:name>
+		<tns:email>test@test.com</tns:email>
+		<tns:phone>1234567890</tns:phone>
+	</tns:participant>
+</tns:event>

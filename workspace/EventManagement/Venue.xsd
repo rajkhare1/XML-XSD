@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.rajeventmanagement.com/Event"
+	xmlns:tns="http://www.rajeventmanagement.com/Event" 
+	xmlns:common="http://www.rajeventmanagement.com/Common"
+	elementFormDefault="qualified">
+	<import schemaLocation="Common.xsd" namespace="http://www.rajeventmanagement.com/Common" />
+	<complexType name="venue">
+		<sequence>
+			<element name="name" type="common:stringmax25" />
+			<element name="street" type="string" />
+			<element name="city" type="string" />
+			<element name="state" type="string" />
+			<element name="country" type="string" />
+			<element name="zipcode" type="string" />
+		</sequence>
+		<attribute name="id" type="common:id" use="required" />
+	</complexType>
+	
+</schema>

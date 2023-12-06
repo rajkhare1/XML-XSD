@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Order xmlns:tns="http://www.rajkhare.com/Order"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rajkhare.com/Order Order.xsd " id="41">
+	<tns:Product id="20">
+		<tns:name>tns:name</tns:name>
+		<tns:description>tns:description</tns:description>
+		<tns:price>0</tns:price>
+		<tns:category>electronics</tns:category>
+	</tns:Product>
+	<tns:customer id="30">
+		<tns:name>tns:name</tns:name>
+	</tns:customer>
+</tns:Order>

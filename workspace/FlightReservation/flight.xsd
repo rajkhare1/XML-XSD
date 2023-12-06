@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.rajairlines.com/reservation"
+	xmlns:tns="http://www.rajairlines.com/reservation">
+
+	<include schemaLocation="common.xsd" />
+
+	<complexType name="flight">
+		<sequence>
+			<element name="flightNumber" type="tns:stringmax20" />
+			<element name="operatingAirlines" type="tns:operatingAirline" />
+			<element name="arrivalCity" type="tns:stringmax20" />
+			<element name="dateOfDeparture" type="date" />
+			<element name="estimatedDepartureTime" type="time" />
+		</sequence>
+	</complexType>
+
+	<simpleType name="operatingAirline">
+		<restriction base="string">
+			<enumeration value="AirIndia" />
+			<enumeration value="SpiceJet" />
+			<enumeration value="JetAirWays" />
+			<enumeration value="IndiGo" />
+			<enumeration value="AirDeccan" />
+			<enumeration value="Vistara" />
+		</restriction>
+	</simpleType>
+
+</schema>

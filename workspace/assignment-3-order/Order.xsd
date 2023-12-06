@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.rajkhare.com/Order"
+	xmlns:tns="http://www.rajkhare.com/Order" elementFormDefault="qualified">
+	
+	<element name="Order" type="tns:Order"/>
+	
+	<complexType name="Order">
+		<sequence>
+			<element name="Product" type="tns:Product" minOccurs="1" maxOccurs="unbounded" />
+			<element name="customer" type="tns:customer" />
+		</sequence>
+		
+		<attribute name="id" type="tns:Id" use="required"/>
+		
+	</complexType>
+	
+	<complexType name="Product">
+		<sequence>
+			<element name="name" type="tns:Max20Chars"/>
+			<element name="description" type="tns:Max100Chars"/>
+			<element name="price" type="int"/>
+			<element name="category" type="tns:CategoryEnumeration"/>
+		</sequence>
+		<attribute name="id" type="tns:Id" use="required"/>
+	</complexType>
+	
+	<complexType name="customer">
+		<sequence>
+			<element name="name" type="string" />
+			<element name="phone" type="string" minOccurs="0" />
+		</sequence>
+		<attribute name="id" type="tns:Id" use="required"/>
+	</complexType>
+	
+	<simpleType name="Id">
+		<restriction base="int">
+			<maxInclusive value="50" />
+		</restriction>
+	</simpleType>
+	
+	
+	<simpleType name="Max20Chars">
+		<restriction base="string">
+			<maxLength value="20" />
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="Max100Chars">
+		<restriction base="string">
+			<maxLength value="100" />
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="CategoryEnumeration">
+		<restriction base="string">
+			<enumeration value="electronics" />
+			<enumeration value="books" />
+			<enumeration value="shoes" />
+		</restriction>
+	</simpleType>
+</schema>
