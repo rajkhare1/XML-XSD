@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "student.dtd" >
+<student year="2023">
+  <name>name</name>
+  <score>score</score>
+</student>

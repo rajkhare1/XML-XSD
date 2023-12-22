@@ -1,0 +1,4 @@
+<!ELEMENT course (#PCDATA|name|price|rating)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>

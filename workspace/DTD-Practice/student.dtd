@@ -1,0 +1,7 @@
+<!ELEMENT student (name,score)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT score (#PCDATA)>
+
+<!ATTLIST student year CDATA  #REQUIRED >
+<!ATTLIST score grade CDATA #IMPLIED>
+<!ATTLIST score grade CDATA #FIXED "A" >
